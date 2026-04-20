@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #2d3436;
+    --accent-color: #0984e3;
+    --bg-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --text-color: #2d3436;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--card-bg);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    color: #636e72;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.tcc-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tcc-title {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.info-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.cta-section {
+    margin-top: 30px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-download:hover {
+    background-color: #0773c5;
+    transform: translateY(-2px);
+}
+
+.about {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #b2bec3;
+    font-size: 0.9rem;
+}
+
+/* Ajustes Mobile */
+@media (max-width: 600px) {
+    header { padding: 40px 0; }
+    header h1 { font-size: 1.8rem; }
+    .btn-download { width: 100%; text-align: center; }
+}
